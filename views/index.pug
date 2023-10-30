@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to 
+  each val in  messages
+    li= 'user: ' +val.user + ' text:' + val.text + ', published on:' +val.added
+  br
+  a(href='/new') new 

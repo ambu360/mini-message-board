@@ -1,0 +1,14 @@
+extends layout 
+
+block content 
+  form(method='POST' action='/new')
+    label(for='author_name') Author name:
+    br
+    input#author_name(type='text' name='author_name')
+    br
+    label(for='message') Your message:
+    br
+    input#message(type='text' name='message')
+    br
+    input(type='submit' value='submit')
+    | submit
